@@ -1,0 +1,209 @@
+@charset "UTF-8";
+
+/*横背景の設定*/
+html {
+    background-color: rgb(0, 8, 26);
+}
+
+/*真ん中の部分の設定*/
+body {
+    background-color: rgb(246, 247, 248);
+    width: 100%;
+    max-width: 800pt;
+    margin: 0 auto;
+    padding: 0;
+}
+
+/*ヘッダーの設定*/
+header {
+    color: rgb(246, 247, 248);
+    background-color: rgb(0, 8, 26);
+    margin: 0;
+    padding: 3px 10px;
+    position: fixed; /*ヘッダーの固定*/
+    top: 0; /*画面上部との余白*/
+    width: 100%;/*デバイスの幅いっぱい*/
+    max-width: 800pt;/*800pt以上は大きくしない*/
+    height: 30pt;
+}
+a.head {
+    display: block;
+    color: rgb(246, 247, 248);
+    font-size: 16pt;
+    font-weight: bold;
+    margin: auto;
+    padding: 0;
+    width: auto;
+    height: auto;
+    text-decoration: none;
+    text-align: left;  /* 文章を左寄せする(※) */
+    float: left;     /* 左端に寄せて、後続を右側へ回り込ませる */
+}
+a.head:hover {
+    color: rgb(9, 97, 72);
+}
+a.trns {
+    display: block;
+    background: rgb(0, 8, 26);
+    color: rgb(246, 247, 248);
+    font-size: 16pt;
+    width: 100px;
+    height: auto;
+    margin-left: auto;
+    padding: 0;
+    text-align: center;
+    text-decoration: none;
+}
+a.trns:hover {
+    color: rgb(9, 97, 72);
+}
+
+/*タイトルの設定*/
+div.title0 {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-image: url('../img/welcom.JPG');
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    padding: 9%;
+    margin-top: 34pt;
+}
+div.title1 {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-image: url('../img/introduction.JPG');
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    padding: 9%;
+    margin-top: 34pt;
+}
+div.title2 {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-image: url('../img/publication.JPG');
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    padding: 9%;
+    margin-top: 34pt;
+}
+div.title3 {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-image: url('../img/presetation.JPG');
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    padding: 9%;
+    margin-top: 34pt;
+}
+div.title4 {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-image: url('../img/links.JPG');
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    padding: 9%;
+    margin-top: 34pt;
+}
+.title {
+    border-top: 10px solid rgb(0, 8, 26);
+    border-bottom: 10px solid rgb(0, 8, 26);
+    background-color: rgb(9, 97, 72, 0.6);
+    color: rgb(246, 247, 248);
+    font-size: 60pt;
+    padding: 0pt 50pt;
+    margin: auto;
+    max-width: 666pt;
+  }
+
+/*メニューの設定*/
+ul.menu {
+    display: flex; /*横並び*/
+    justify-content: space-between; /*左右両端揃え*/
+    width: 100%;
+    max-width: 800pt;
+    list-style: none;
+    margin: auto;
+    padding: 0;
+}
+ul.menu li {
+    width: 25%;
+    max-width: 200pt;
+    border-left: 1px solid rgb(9, 97, 72);
+}
+ul.menu li:last-child {
+    border-right: 1px solid rgb(9, 97, 72);
+}
+ul.menu li a {
+    display: block;
+    padding: 15px 0;
+    background-color: rgb(0, 8, 26);
+    color: rgb(246, 247, 248);
+    font-size: 20px;
+    font-weight: bold;
+    text-align: center;
+    text-decoration: none;
+}
+ul.menu li a:hover {
+    color: rgb(9, 97, 72);
+}
+
+/*メインの設定*/
+main {
+    color: rgb(0, 8, 26);
+    padding: 50px 75px;
+}
+main p {
+    font-size: 13pt;
+    margin: 5px 10px;
+}
+main h1 {
+    font-size: 17pt;
+    text-decoration: underline;
+    margin-top: 20px;
+    margin-bottom: 5px;
+}
+main h2 {
+    font-size: 13pt;
+    text-decoration: underline;
+    margin-top: 10px;
+    margin-bottom: 5px; 
+}
+main p.link {
+    font-size: 13pt;
+    margin: 10px 20px;
+}
+main ol, main ul {
+    font-size: 13pt;
+    margin: auto;
+}
+main ol li, main ul li {
+    padding-top: 10px;
+    padding-bottom: 10px;
+}
+main table {
+    font-size: 13pt;
+    margin: 5px 10px;
+}
+
+/*フッターの設定*/
+footer {
+    color: rgb(246, 247, 248);
+    background-color: rgb(0, 8, 26);
+    margin: 0;
+    padding: 3px auto;
+    width: 100%;/*デバイスの幅いっぱい*/
+    max-width: 800pt;/*800pt以上は大きくしない*/
+    height: 15pt;
+    text-align: center;
+    position: absolute;
+}
